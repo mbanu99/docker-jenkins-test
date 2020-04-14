@@ -9,7 +9,7 @@ pipeline {
         stage("Run Hello World") {
             steps {
                 sh """
-                    cat /etc/hostname
+                    python helloworld.py
                 """
             } //steps
         } //stage
